@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 
-// import daisyPlugin from 'daisyui'
+import daisyPlugin from 'daisyui'
 
 export default {
   content: ['./index.html', './src/**/*.{vue,js,ts,jsx,tsx}'],
@@ -12,9 +12,9 @@ export default {
   // ],
   theme: {
     extend: {}
+  },
+  plugins: [daisyPlugin],
+  daisyui: {
+    themes: ['light', 'dark', 'cupcake']
   }
-  // plugins: [daisyPlugin],
-  // daisyui: {
-  //   themes: ['light', 'dark', 'cupcake']
-  // }
 }
